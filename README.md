@@ -25,3 +25,13 @@ Run tests:
 ```bash
 uv run pytest
 ```
+
+### VS Code Tasks
+
+Common development tasks are available via VS Code. Open the command palette and
+run `Tasks: Run Task` to see the options. Provided tasks include:
+
+- **Run Tests** – executes `uv run pytest -v`
+- **Run Document Ingestor** – starts the CLI with `uv run document-ingestor`
+- **Run Ruff** – lints the codebase with `uv run ruff .`
+- **Run Mypy** – performs type checking with `uv run mypy src tests`
