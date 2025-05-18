@@ -17,17 +17,14 @@ dependencies = [
     "qdrant-client>=1.7.0",
     "PyYAML>=6.0",
     "scrapy>=2.11.0",
+    "pytest>=8.3.5",
 ]
 
 [project.optional-dependencies]
-dev = [
-    "pytest>=7.0.0",
-    "ruff>=0.1.5",
-    "mypy>=1.8.0",
-]
+dev = ["pytest>=7.0.0", "ruff>=0.1.5", "mypy>=1.8.0"]
 
 [tool.setuptools]
-package-dir = {"" = "src"}
+package-dir = { "" = "src" }
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -41,3 +38,7 @@ python_version = "3.12"
 warn_return_any = true
 disallow_untyped_defs = true
 disallow_incomplete_defs = true
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
