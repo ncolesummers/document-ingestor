@@ -23,5 +23,5 @@ uv run document-ingestor
 Run tests:
 
 ```bash
-uv run pytest
+uvx pytest
 ```
