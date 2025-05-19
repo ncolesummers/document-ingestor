@@ -4,7 +4,7 @@ import scrapy
 class AtlassianSpider(scrapy.Spider):
     name = "atlassian"
     allowed_domains = ["atlassian.com"]
-    start_urls = ["https://atlassian.com"]
+    start_urls = ["https://atlassian.com/agile"]
 
     def parse(self, response):
         pass
