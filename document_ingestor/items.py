@@ -7,6 +7,10 @@ import scrapy
 
 
 class DocumentIngestorItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    """Common structure for pages collected by all spiders."""
+
+    title = scrapy.Field()
+    url = scrapy.Field()
+    body_text = scrapy.Field()
+    source = scrapy.Field()
+    retrieved_at = scrapy.Field()
