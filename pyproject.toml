@@ -42,3 +42,11 @@ disallow_incomplete_defs = true
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 testpaths = ["tests"]
+
+[project.scripts]
+crawl-atlassian = "document_ingestor.run_spiders:crawl_atlassian"
+crawl-martinfowler = "document_ingestor.run_spiders:crawl_martinfowler"
+crawl-mountaingoatsoftware = "document_ingestor.run_spiders:crawl_mountaingoatsoftware"
+crawl-scaledagileframework = "document_ingestor.run_spiders:crawl_scaledagileframework"
+crawl-scrumguides = "document_ingestor.run_spiders:crawl_scrumguides"
+crawl-scrumalliance = "document_ingestor.run_spiders:crawl_scrumalliance"

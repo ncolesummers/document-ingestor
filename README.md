@@ -26,6 +26,24 @@ Run tests:
 uv run pytest
 ```
 
+## Running Spiders
+
+Scrapy spiders live in `document_ingestor/spiders` and can be started with
+`uv run` using the scripts defined in `pyproject.toml`. Scraped pages are cleaned
+by the `DocumentIngestorPipeline` and saved as text files in the `output/`
+directory.
+
+Example commands:
+
+```bash
+uv run crawl-atlassian
+uv run crawl-martinfowler
+uv run crawl-mountaingoatsoftware
+uv run crawl-scaledagileframework
+uv run crawl-scrumguides
+uv run crawl-scrumalliance
+```
+
 ### VS Code Tasks
 
 Common development tasks are available via VS Code. Open the command palette and
